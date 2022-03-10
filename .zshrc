@@ -2,16 +2,20 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
 eval "$(rbenv init -)"
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PGDATA=/usr/local/var/postgres
+alias python='python3'
+alias pip='pip3'
+#export PYENV_ROOT="$HOME/.pyenv"
+
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+#export PGDATA=/usr/local/var/postgres
 
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$PATH
+#export GOPATH=$HOME/go
+#export PATH=$GOPATH/bin:$PATH
 
+export PATH=~/sources/flutter/bin:$PATH
 
 ### Added by Zplugin's installer
 source "$HOME/.zplugin/bin/zplugin.zsh"
@@ -28,4 +32,6 @@ zplugin ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%a
 zplugin light direnv/direnv
 zplugin light dracula/zsh
 
+export PATH="/Users/tomoya/opt/anaconda3/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
